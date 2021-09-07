@@ -34,6 +34,14 @@ while (1):  #Laço de repetição do inicio do programa
         print ("[1] - Caminho vermelho")
         print ("[2] - Caminho caminho preto")
         caminho = int(input())
+
+        while (caminho <= 0) or (caminho >= 3):     #Verifica se está numa sala válida
+            print("\nSem trapacear !\n Você Deve escolher um caminho 'vermelho' ou 'preto' para prosseguir !\n")
+            print ("Você está na sala: {}".format(sala))    
+            print ("Escolha seu caminho: ")
+            print ("[1] - Caminho vermelho")
+            print ("[2] - Caminho caminho preto")
+            caminho = int(input())
 else:
     print("Você se Perdeu no labirinto para todo o sempre buahahahahahahahaha !") # Easter-egg no Código
   
