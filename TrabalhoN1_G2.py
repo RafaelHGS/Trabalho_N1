@@ -23,6 +23,11 @@ while (1):  #Laço de repetição do inicio do programa
     if (sala == 9) and (interacao <7):  #Verificação do número de salas, se for igual a 9 com menos de 7 interações, o jogador vence
         print("\nParabéns você chegou ao fim do labirinto com {} interações, Vc e sua Guilda Venceram o Labirinto !!!".format(interacao))
         break
+    elif (sala == 9) and (interacao >= 7):
+        print("\n\tInfelizmente Você se Perdeu no meio do caminho e levou\n mais do que 7 interações para chegar na sala 9")
+        print ("Tente novamente com menos movimentos/interações, e Boa Sorte!")
+        print ("Total de Interações/Movimentos: {}".format(interacao))
+        break
     else:   #Execução do programa, onde o usuário vai selecionar o caminho que vai percorrer
         print ("Você está na sala: {}".format(sala))    
         print ("Escolha seu caminho: ")
