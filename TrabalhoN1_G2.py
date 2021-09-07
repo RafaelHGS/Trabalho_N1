@@ -31,3 +31,4 @@ while (1):  #Laço de repetição do inicio do programa
         caminho = int(input())
 else:
     print("Você se Perdeu no labirinto para todo o sempre buahahahahahahahaha !") # Easter-egg no Código
+  
