@@ -23,7 +23,7 @@ while (1):  #Laço de repetição do inicio do programa
     if (sala == 9) and (interacao <7):  #Verificação do número de salas, se for igual a 9 com menos de 7 interações, o jogador vence
         print("\nParabéns você chegou ao fim do labirinto com {} interações, Vc e sua Guilda Venceram o Labirinto !!!".format(interacao))
         break
-    elif (sala == 9) and (interacao >= 7):
+    elif (sala == 9) and (interacao >= 7):  #Verificação do número de salas, se for igual a 9 com 7 ou mais interações, o jogador perde
         print("\n\tInfelizmente Você se Perdeu no meio do caminho e levou\n mais do que 7 interações para chegar na sala 9")
         print ("Tente novamente com menos movimentos/interações, e Boa Sorte!")
         print ("Total de Interações/Movimentos: {}".format(interacao))
@@ -32,7 +32,7 @@ while (1):  #Laço de repetição do inicio do programa
         print ("Você está na sala: {}".format(sala))    
         print ("Escolha seu caminho: ")
         print ("[1] - Caminho vermelho")
-        print ("[2] - Caminho caminho preto")
+        print ("[2] - Caminho preto")
         caminho = int(input())
 
         while (caminho <= 0) or (caminho >= 3):     #Verifica se está numa sala válida
@@ -40,7 +40,7 @@ while (1):  #Laço de repetição do inicio do programa
             print ("Você está na sala: {}".format(sala))    
             print ("Escolha seu caminho: ")
             print ("[1] - Caminho vermelho")
-            print ("[2] - Caminho caminho preto")
+            print ("[2] - Caminho preto")
             caminho = int(input())
 else:
     print("Você se Perdeu no labirinto para todo o sempre buahahahahahahahaha !") # Easter-egg no Código
