@@ -39,4 +39,14 @@ while (1):
             print ("[1] - Caminho vermelho")
             print ("[2] - Caminho preto")
             caminho = int(input())
-  
+        else:
+            while (caminho == 1):
+                interacao = interacao + 1
+                if (sala == 6):
+                    print ("\nVocê está na sala: {}, pórem aqui só existe um caminho que o leva para a sala 8".format(sala))
+                    print ("Portanto, vc segue esse caminho que te leva para a sala 8\n")
+                    sala = 8
+                    caminho = 0
+                else:
+                    sala = sala + 1
+                    caminho = 0  
