@@ -50,3 +50,20 @@ while (1):
                 else:
                     sala = sala + 1
                     caminho = 0  
+            else:
+                while (caminho == 2):
+                    interacao = interacao + 1
+                    if (sala == 6):
+                        print ("\nVocê está na sala: {}, pórem aqui só existe um caminho que o leva para a sala 8".format(sala))
+                        print ("Portanto, vc segue esse caminho que te leva para a sala 8\n")
+                        sala = 8
+                        caminho = 0
+                    elif (sala == 8):
+                        print ("\n\tO Caminho que você escolheu, te leva até um portal, vc escolhe o atravessar")
+                        print (" Porém, infelizmente esse portal era uma armadilha, e te leva para uma sala aleatória\n")
+                        sala = random.randint(1,5)
+                        caminho = 0
+                    else:
+                        sala = sala + 2
+                        caminho = 0
+                        
